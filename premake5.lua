@@ -1,7 +1,7 @@
-project "ImGui"
+project "yaml-cpp"
      kind "StaticLib"
      language "C++"
-	 staticruntime "off"
+	 staticruntime "on"
 	 warnings "off"
 
      targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -19,7 +19,10 @@ project "ImGui"
       "include"
      }
 
-
+     defines
+		{
+			"YAML_CPP_STATIC_DEFINE"
+		}
 
 	filter "system:windows"
 		systemversion "latest"
