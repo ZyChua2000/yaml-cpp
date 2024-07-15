@@ -1,4 +1,4 @@
-project "ImGui"
+project "yaml-cpp"
      kind "StaticLib"
      language "C++"
 	 staticruntime "off"
